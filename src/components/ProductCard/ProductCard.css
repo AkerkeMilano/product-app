@@ -1,0 +1,25 @@
+.ProductCard {
+    width: 300px;
+    height: 300px;
+}
+
+.ProductCard img {
+    width: 300px;
+    height: 225px;
+    object-fit: cover;
+}
+
+.productTitle {
+    color: rgb(164, 12, 240);
+}
+
+.productTitle:hover{
+    opacity: 0.6;
+}
+
+.productBottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}

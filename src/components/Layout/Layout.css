@@ -1,0 +1,25 @@
+.header {
+    height: toRem(56);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(153, 131, 131);
+    padding: 10px;
+}
+
+header {
+    padding: 2rem 0;
+    text-align: center;
+  }
+  header > a {
+    color: white;
+    text-decoration: none;
+    padding: 0 1rem;
+  }
+  header > a:hover {
+    text-decoration: underline;
+  }

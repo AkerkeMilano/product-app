@@ -1,0 +1,18 @@
+.loginBtns {
+    display: flex;
+    gap: 10px;
+}
+
+.loginForm {
+    margin: 10px 0;
+}
+
+.error{
+    font-size: 12px;
+    width: 250px;
+    height: auto;
+    padding: 4px;
+    background-color: rgb(246, 219, 241);
+    border-radius: 2px;
+    margin: 10px;
+}

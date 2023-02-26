@@ -14,7 +14,6 @@ export const LoginModel = ({ isFormOpened }) => {
   });
   const dispatch = useDispatch();
   const error = useSelector((state) => state.login.error);
-  const isLoggedIn = useSelector((state) => state.login.isLoggedIn);
   const handleInputChange = (event) => {
     setFields((prevState) => {
       return {

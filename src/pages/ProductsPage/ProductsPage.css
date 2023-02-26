@@ -1,5 +1,5 @@
 .ProductsPage {
-    margin-top: 50px;
+    margin-top: 80px;
     padding: 20px;
 }
 .productList {
@@ -11,3 +11,8 @@
     justify-items: center;
 }
 
+.loginWarn {
+    font-size: 20px;
+    color: rgb(230, 30, 30);
+    margin-top: 20px;
+}

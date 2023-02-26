@@ -10,10 +10,10 @@ export const ProductDetails = () => {
   const { id } = useParams();
   const dispatch = useDispatch();
   const product = useSelector((state) => state.productList.product);
+  const isLoggedIn = useSelector((state) => state.login.isLoggedIn);
   useEffect(() => {
     dispatch(fetchProductById(id));
   }, [dispatch, id]);
-  console.log("product", product);
   return (
     <div className="ProductDetails">
       <div className="leftBlock">
@@ -25,7 +25,12 @@ export const ProductDetails = () => {
         <h1>{product.title}</h1>
         <div>{product.description}</div>
         <div className="productPrice">${product.price}</div>
-        <CartBlock />
+        {!isLoggedIn && (
+          <div className="loginWarn">
+            !!! Чтобы добавить товар на страницу залогинтесь
+          </div>
+        )}
+        {isLoggedIn && <CartBlock product={product} />}
       </div>
     </div>
   );

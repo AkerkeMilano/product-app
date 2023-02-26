@@ -1,0 +1,13 @@
+.AboutShop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 80px;
+}
+
+.aboutText {
+    width:  1000px;
+    font-size: 30px;
+    padding: 50px;
+}

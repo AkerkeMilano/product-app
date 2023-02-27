@@ -1,0 +1,29 @@
+.CartPage {
+  margin-top: 80px;
+  padding: 20px;
+}
+
+.totalSum {
+    font-size: 20px;
+    color: green;
+    padding: 20px;
+}
+
+.cartBtns {
+    display: flex;
+    gap: 10px;
+}
+table,
+th,
+td {
+  border: 1px solid;
+  padding: 10px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+thead th:nth-child(2) {
+    width: 30%;
+  }

@@ -4,6 +4,7 @@ import { ProductsPage } from "./pages/ProductsPage/ProductsPage";
 import { ProductDetails } from "./pages/ProductDetails/ProductDetails";
 import { AboutShop } from "./pages/AboutShop/AboutShop";
 import { NotFound } from "./pages/NotFound/NotFound";
+import { CartPage } from "./pages/CartPage/CartPage";
 import "./App.css";
 
 function App() {
@@ -15,6 +16,8 @@ function App() {
           <Route path="/about" element={<AboutShop />} />
           <Route path="products/:id" element={<ProductDetails />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/cart" element={<CartPage />} />
+          
         </Route>
       </Routes>
     </BrowserRouter>

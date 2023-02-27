@@ -10,5 +10,9 @@ export const loginData = [
     {
         username: 'AbuDhabi',
         password: '12345678'
+    },
+    {
+        username: 'test',
+        password: 'test'
     }
 ]

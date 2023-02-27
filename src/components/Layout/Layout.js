@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { Outlet, NavLink } from "react-router-dom";
+import { Outlet, NavLink, useNavigate } from "react-router-dom";
 import { openLogin } from "../../store/loginSlice";
 import { Button } from "../Button/Button";
 import { LoginModel } from "../LoginModel/LoginModel";
@@ -8,6 +8,7 @@ import "./Layout.css";
 
 export const Layout = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const isFormOpened = useSelector((state) => state.login.isFormOpened);
   const cart = useSelector((state) => state.cartList.cart);
   const isLoggedIn = useSelector((state) => state.login.isLoggedIn);
@@ -24,8 +25,14 @@ export const Layout = () => {
         </div>
         <div className="layoutBlock">
           {isLoggedIn && (
-            <div>
-              В корзине {cart.length} товара на сумму ${totalPrice}
+            <div className="cartBlock">
+              <div>
+                   В корзине {cart.length} товара на сумму ${totalPrice}
+              </div>
+              <button className="iconBtn" onClick={() => {navigate("/cart")}}>
+                <span className="cartIcon"></span>
+              </button>
+              
             </div>
           )}
 
